@@ -94,7 +94,7 @@ def generating_samples(N = 40, eqit = 2^50, Temp_lower= .25, Temp_upper = 4, Tem
                 mcmove(config, 1/Temp)
             #print("magnetization:", sum(sum(config))/(N*N))
             CO.append(config)
-        with open(f'D:\Pointcloud\ANC\Res\Ising_Data_gen\Ising_{Temp}.npy', 'wb') as f:
+        with open(f'Destinationfolder\ising_{Temp}.npy', 'wb') as f:
             np.save(f, CO)
         All_Temp[f"Temp {Temp}"] = np.asanyarray(CO)
 
