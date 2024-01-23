@@ -105,6 +105,7 @@ if __name__ == "__main__":
     Ising_lattices = generating_samples()
     
 
+    
     """
     print(Ising_lattices.keys())
 
