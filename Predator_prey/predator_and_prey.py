@@ -35,8 +35,8 @@ pred_vals.append(pred_0)
 for i in range(1,len(t)):
     prey_curr = prey_vals[i-1]
     pred_curr = pred_vals[i-1]
-    prey_next = prey_curr + prey_growth(prey_curr, pred_curr)*0.1
-    pred_next = pred_curr + pred_growth(prey_curr, pred_curr)*0.1
+    prey_next = prey_curr + prey_growth(prey_curr, pred_curr)*0.05
+    pred_next = pred_curr + pred_growth(prey_curr, pred_curr)*np.random.rand()
     prey_vals.append(prey_next)
     pred_vals.append(pred_next)
 
